@@ -55,10 +55,10 @@ extension ByteCoinViewController: CoinMangerDelegate {
         print(error)
     }
     
-    func didUpdatePrice(_ coinManager: CoinManager, coinModel: CoinModel) {
+    func didUpdatePrice(_ coinManager: CoinManager, coinModel: CoinModel, currency: String) {
         DispatchQueue.main.async {
             self.priceLabel.text = coinModel.rate
-            self.currencyLabel.text = coinModel.currency
+            self.currencyLabel.text = currency
         }
     }
 }

@@ -11,5 +11,4 @@ import Foundation
 struct CoinModel {
     let date: String
     let rate: String
-    let currency: String
 }
